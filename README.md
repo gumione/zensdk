@@ -2,11 +2,23 @@
 
 ## Installation
 
-Run the command:
+Create composer.json file with this content
 
 ```
-    cd your_app_dir && git clone https://github.com/gumione/zensdk.git . 
+{
+    "require": {
+        "gumione/zen-sdk": "~1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gumione/zensdk.git"
+        }
+    ]
+}
 ```
+Then run 
+```composer install```
 
 ## Usage
 
