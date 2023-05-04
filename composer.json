@@ -1,0 +1,17 @@
+{
+    "name": "gumione/zen-sdk",
+    "require": {
+        "guzzlehttp/psr7": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gumione\\ZenSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gumione",
+            "email": "gumione@gmail.com"
+        }
+    ]
+}
