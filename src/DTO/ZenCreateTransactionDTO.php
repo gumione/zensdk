@@ -65,11 +65,71 @@ class ZenCreateTransactionDTO {
      * @param string $currency The transaction currency.
      * @param string $paymentChannel The payment channel.
      * @param array $customer The customer data.
+     *      array{
+     *          firstName: string,
+     *          lastName: string,
+     *          email: string,
+     *          phone: string,
+     *          ip: string
+     *      }
      * @param array $fraudFields The fraud fields.
+     *      array{
+     *          fingerPrintId: string,
+     *          referer: string
+     *      }
      * @param array $paymentSpecificData The payment specific data.
+     *      array{
+     *          type: string,
+     *          descriptor: string,
+     *          card: array{
+     *              number: string,
+     *              expiryDate: string,
+     *              cvv: string
+     *          },
+     *          skip3ds: bool,
+     *          browserDetails: array{
+     *              acceptHeader: string,
+     *              colorDepth: string,
+     *              javaEnabled: bool,
+     *              lang: string,
+     *              screenHeight: string,
+     *              screenWidth: string,
+     *              timezone: string,
+     *              windowSize: string,
+     *              userAgent: string
+     *          }
+     *      }
      * @param array $items The transaction items.
+     *      array{
+     *          code: string,
+     *          category: string,
+     *          name: string,
+     *          price: string,
+     *          quantity: int,
+     *          lineAmountTotal: string
+     *      }
      * @param array $buyer The buyer data.
+     *      array{
+     *          email: string,
+     *          phone: string
+     *      }
      * @param array|null $shippingAddress The shipping address.
+     *      array{
+     *          id: string,
+     *          userId: string,
+     *          firstName: string,
+     *          lastName: string,
+     *          country: string,
+     *          street: string,
+     *          city: string,
+     *          countryState: string,
+     *          province: string,
+     *          buildingNumber: string,
+     *          roomNumber: string,
+     *          postcode: string,
+     *          companyName: string,
+     *          phone: string
+     *      }|null
      * @param string|null $description The transaction description.
      * @param string|null $customerIp The customer IP address.
      * @param string|null $merchantPosId The merchant POS ID.
@@ -265,4 +325,5 @@ class ZenCreateTransactionDTO {
 
         return $data;
     }
+
 }
