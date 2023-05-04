@@ -1,5 +1,15 @@
 {
     "name": "gumione/zen-sdk",
+    "version": "1.0.0",
+    "description": "Sample Zen SDK code",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gumione",
+            "email": "gumione@gmail.com"
+        }
+    ],
     "require": {
         "guzzlehttp/psr7": "^2.5"
     },
@@ -8,10 +18,9 @@
             "Gumione\\ZenSdk\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "gumione",
-            "email": "gumione@gmail.com"
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.0"
         }
-    ]
+    }
 }
